@@ -22,6 +22,7 @@ let search = () => {
 	if (searchValue === '') {
 		alert("Please enter a search term in the search box");
 	} else {
+		$loader.style.display = 'block';
 		$setting.style.display = 'flex';
 		$searchForm.style.position = 'relative';
 		fetchResult();
@@ -83,7 +84,6 @@ let printCard = (reposetory) => {
 $searchForm.addEventListener('submit', () => {
 	event.preventDefault();
 	pageCount = 1;
-	$loader.style.display = 'block';
 	$content.style.display = 'none';
 	search();
 });
