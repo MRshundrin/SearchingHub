@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>shundrin_test_work</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header id="header_part">
+			<form id="search" class="search_container">
+					<input aria-label="Search" id="search-input" type="search" placeholder="Search...">
+					<div class="search"></div>
+			</form>
+			<section id="setting_panel">
+				<div id="select_language"> 
+						<span>Programming language</span>
+						<select name="programming_language" id="language">
+							<option value="All" selected>All</option>
+							<option value="Python">Python</option> 
+							<option value="JavaScript">JavaScript</option>
+							<option value="Java">Java</option>
+							<option value="C">C</option>
+						</select>
+				</div>
+				<div id="select_sorting">
+						<span>Sorting method</span>
+						<select name="sort" id="sort">
+							<option value="best-match" selected>Best match</option>
+							<option value="stars">Stars</option> 
+							<option value="forks">Forks</option>
+							<option value="update">Updated</option>
+						</select>
+				</div>
+			</section>
+	</header>
+	<main id="main_part">
+		<p id="pages"></p>
+		<div id="content">
+			<button id="left_arrow" class="arrow_button">&#129084</button>
+			<ul id="list_part"></ul>
+			<button id="right_arrow" class="arrow_button">&#129086</button>
+		</div>
+		<div id="loader"></div>
+	</main>
+	<script src="main.js"></script>	
+</body>
+</html>
